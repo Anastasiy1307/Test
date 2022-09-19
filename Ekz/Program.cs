@@ -31,12 +31,7 @@ namespace Ekz
             trub.Trub(lengh, truba, outer_diametr, thick_wall);
         
 
-            TextWriterTraceListener[] listeners = new TextWriterTraceListener[] {
-            new TextWriterTraceListener(@"D:\1.txt"),  // указать путь
-            new TextWriterTraceListener(Console.Out)};
-            Debug.Listeners.AddRange(listeners);
-            Debug.WriteLine("Ошибка"); // то что пишет в файл и в консоль
-            Debug.Flush();
+            
             Console.Read();
         }      
     }
@@ -62,7 +57,11 @@ namespace Ekz
 
             double min_lengh = 3960;
             double max_lengh = 4040;
-            
+            TextWriterTraceListener[] listeners = new TextWriterTraceListener[] {
+            new TextWriterTraceListener(@"D:\1.txt"),  //Путь файла
+            new TextWriterTraceListener(Console.Out)};
+           
+
             if (lengh >= min_lengh && max_lengh >= lengh)
             {
                 switch (trubes)
@@ -76,11 +75,17 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("Труба соответствует критериям");
+                                
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
                             }
                             else
                             {
                                 Console.WriteLine("Труба не соответствует критериям");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
                             }
                         }
                         else if (out_diam == 25)
@@ -90,11 +95,17 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("ВСЁ КРУТА");
+                               
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
                             }
                             else
                             {
-                                Console.WriteLine("не крута");
+                                
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
                             }
                         }
                         else if (out_diam == 32)
@@ -104,11 +115,15 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("ВСЁ КРУТА");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
                             }
                             else
                             {
-                                Console.WriteLine("не крута");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
                             }
                         }
                         else if (out_diam == 40)
@@ -118,11 +133,15 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("ВСЁ КРУТА");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
                             }
                             else
                             {
-                                Console.WriteLine("не крута");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
                             }
                         }
                         else if (out_diam == 50)
@@ -132,11 +151,15 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("ВСЁ КРУТА");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
                             }
                             else
                             {
-                                Console.WriteLine("не крута");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
                             }
                         }
                         else if (out_diam == 63)
@@ -146,11 +169,15 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("ВСЁ КРУТА");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
                             }
                             else
                             {
-                                Console.WriteLine("не крута");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
                             }
                         }
                         break;
