@@ -47,7 +47,7 @@ namespace Ekz
         /// </summary>
         /// <param name="lengh">Берет длинну из главного метода</param>
         /// <param name="trubes">Виды трубы на выбор</param>
-        /// <param name="out_diam">Берет внешний диаметр трубы из главного метода</param>
+        /// <param name="out_diam">Берет внешний диаметр трубы из метода</param>
         /// <param name="thi_wal">Берет толщину трубы из главного метода</param>
         public void Trub(double lengh, double trubes, double out_diam, double thi_wal)
         {
@@ -57,6 +57,7 @@ namespace Ekz
 
             double min_lengh = 3960;
             double max_lengh = 4040;
+
             TextWriterTraceListener[] listeners = new TextWriterTraceListener[] {
             new TextWriterTraceListener(@"D:\1.txt"),  //Путь файла
             new TextWriterTraceListener(Console.Out)};

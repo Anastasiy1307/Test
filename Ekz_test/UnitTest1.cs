@@ -11,7 +11,7 @@ namespace Ekz_test
         public void TestMethod()
         {
             Ekz.Trubes program = new Ekz.Trubes();
-            program.Trup(4000, 1, 20, 2);
+            program.Trub(4000, 1, 20, 2);
 
         }
     }
