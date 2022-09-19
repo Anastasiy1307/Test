@@ -16,15 +16,15 @@ namespace Ekz
                
             double thick_wall;// толщина стенки
             thick_wall = Double.Parse(Console.ReadLine());
-            double lengh = Double.Parse(Console.ReadLine());
+            double lengh = Double.Parse(Console.ReadLine());//длинна
 
             Console.WriteLine("Выбери тип трубы\n" +
                 "1 pn10\n" +
                 "2 pn16\n" +
                 "3 pn20\n" +
                 "4 pn25 ");
-            int truba = int.Parse(Console.ReadLine());
-            int outer_diametr=int.Parse(Console.ReadLine());
+            int truba = int.Parse(Console.ReadLine()); //выбор трубы
+            int outer_diametr=int.Parse(Console.ReadLine());//Внешний диаметр
 
             Trubes trub = new Trubes();
             trub.Trub(lengh, truba, outer_diametr, thick_wall);
@@ -68,11 +68,11 @@ namespace Ekz
                             crav2 = out_diam / 100 * outer.max_proc[0];
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
-                                Console.WriteLine("ВСЁ КРУТА");
+                                Console.WriteLine("Труба соответствует критериям");
                             }
                             else
                             {
-                                Console.WriteLine("не крута");
+                                Console.WriteLine("Труба не соответствует критериям");
                             }
                         }
                         else if (out_diam == 25)
