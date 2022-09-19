@@ -78,14 +78,14 @@ namespace Ekz
                             {
                                 
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием пройдена успешно"); // Сообщение
                                 Debug.Flush();
                             }
                             else
                             {
                                 Console.WriteLine("Труба не соответствует критериям");
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием провалена"); // Сообщение
                                 Debug.Flush();
                             }
                         }
@@ -98,14 +98,14 @@ namespace Ekz
                             {
                                
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием пройдена успешно"); // Сообщение
                                 Debug.Flush();
                             }
                             else
                             {
                                 
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием провалена"); // Сообщение
                                 Debug.Flush();
                             }
                         }
@@ -117,13 +117,13 @@ namespace Ekz
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием пройдена успешно"); // Сообщение
                                 Debug.Flush();
                             }
                             else
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием провалена"); // Сообщение
                                 Debug.Flush();
                             }
                         }
@@ -135,13 +135,13 @@ namespace Ekz
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием пройдена успешно"); // Сообщение
                                 Debug.Flush();
                             }
                             else
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием провалена"); // Сообщение
                                 Debug.Flush();
                             }
                         }
@@ -153,13 +153,13 @@ namespace Ekz
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием пройдена успешно"); // Сообщение
                                 Debug.Flush();
                             }
                             else
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием провалена"); // Сообщение
                                 Debug.Flush();
                             }
                         }
@@ -171,13 +171,13 @@ namespace Ekz
                             if (thi_wal >= crav1 && thi_wal <= crav2)
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием пройдена успешно"); // Сообщение
                                 Debug.Flush();
                             }
                             else
                             {
                                 Debug.Listeners.AddRange(listeners);
-                                Debug.WriteLine("Проверка трубы на соответствие требованием провалена"); // Сообщение
+                                Debug.WriteLine("Проверка трубы PN10 на соответствие требованием провалена"); // Сообщение
                                 Debug.Flush();
                             }
                         }
@@ -186,15 +186,348 @@ namespace Ekz
                     case 2:
 
                         Console.WriteLine("PN16 (Аромированная) ");
+                        if (out_diam == 20)
+                        {
+                            crav1 = out_diam / 100 * outer.min_proc[1];
+                            crav2 = out_diam / 100 * outer.max_proc[1];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Труба не соответствует критериям");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 25)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[1];
+                            crav2 = out_diam / 100 * outer.max_proc[1];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 32)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[1];
+                            crav2 = out_diam / 100 * outer.max_proc[1];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 40)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[1];
+                            crav2 = out_diam / 100 * outer.max_proc[1];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 50)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[1];
+                            crav2 = out_diam / 100 * outer.max_proc[1];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 63)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[1];
+                            crav2 = out_diam / 100 * outer.max_proc[1];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN16 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
 
                         break;
 
                     case 3:
                         Console.WriteLine("PN20");
+                        if (out_diam == 20)
+                        {
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Труба не соответствует критериям");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 25)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 32)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 40)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 50)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 63)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN20 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
                         break;
 
                     case 4:
                         Console.WriteLine("PN25");
+                        if (out_diam == 20)
+                        {
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Труба не соответствует критериям");
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 25)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 32)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 40)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 50)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
+                        else if (out_diam == 63)
+                        {
+
+                            crav1 = out_diam / 100 * outer.min_proc[2];
+                            crav2 = out_diam / 100 * outer.max_proc[2];
+                            if (thi_wal >= crav1 && thi_wal <= crav2)
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием пройдена успешно"); // Сообщение
+                                Debug.Flush();
+                            }
+                            else
+                            {
+                                Debug.Listeners.AddRange(listeners);
+                                Debug.WriteLine("Проверка трубы PN25 на соответствие требованием провалена"); // Сообщение
+                                Debug.Flush();
+                            }
+                        }
                         break;
 
                 }
