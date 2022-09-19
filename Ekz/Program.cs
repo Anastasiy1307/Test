@@ -14,7 +14,7 @@ namespace Ekz
         static void Main(string[] args)
         {
                
-            double thick_wall;
+            double thick_wall;// толщина стенки
             thick_wall = Double.Parse(Console.ReadLine());
             double lengh = Double.Parse(Console.ReadLine());
 
