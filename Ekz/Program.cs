@@ -34,8 +34,8 @@ namespace Ekz
     }
     public class Outer_diametr
     {
-        public double[] min_proc = new double[] { 10, 13.5, 16.5 };
-        public double[] max_proc = new double[] { 11, 14, 17 };
+        public double[] min_proc = new double[] { 10, 13.5, 16.5 };//массив минимальных % для расчета толщины трубы
+        public double[] max_proc = new double[] { 11, 14, 17 };//массив Максимальных % для расчета толщины трубы
     }
     public class Trubes
     {
